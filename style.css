@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+:root {
+  --blanco: #ffffff;
+  --negro: #0000005b;
+  --bgcolor: #1f1f1f;
+  --moradoClaro: #9e57fa;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1 rem = 10px */
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bgcolor);
+}
+
+.main {
+  padding: 50px 30px;
+  margin: auto;
+  max-width: 800px;
+}
+
+/* SOCIAL MEDIAS */
+#socialNetworks {
+  margin: 15px auto;
+  width: 35%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+#socialNetworks a {
+  margin: 0 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#socialNetworks a img {
+  transition-timing-function: ease-in;
+  width: 100%;
+  z-index: 20;
+  ;
+}
+
+#socialNetworks a img:hover {
+  cursor: pointer;
+  width: 90%;
+}
+
+/* Profile */
+.nombre {
+  font-size: 3rem;
+  letter-spacing: .3rem;
+  font-weight: bolder;
+  text-align: center;
+  color: var(--blanco);
+}
+
+.imgDevRaffa {
+  width: 40%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin: 10px auto 0 auto;
+  display: block;
+  z-index: 20;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: var(--blanco);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.footerP {
+  font-size: 1.5rem;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.burbuja {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--moradoClaro);
+  opacity: .3;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  animation: burbujas 3s linear infinite;
+}
+
+.burbuja2 {
+  left: 25%;
+}
+
+.burbuja3 {
+  left: 70%;
+}
+
+.burbuja4 {
+  left: 90%;
+}
+
+@keyframes burbujas {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .4;
+  }
+
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+  }
+}

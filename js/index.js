@@ -31,10 +31,10 @@ const socialNetworks = () => {
     sectionSocialNetworks.id = 'socialNetworks'
     
     const enlaces = [
-        {href: 'https://www.linkedin.com/in/devraffa/', imgSrc: 'img/icons/linkedin.svg'},
-        {href: 'https://www.tiktok.com/@devraffa', imgSrc: 'img/icons/tiktok.svg'},
-        {href: 'https://twitter.com/DevRaffa', imgSrc: 'img/icons/twitter.svg'},
-        {href: 'https://www.instagram.com/raffabd_/', imgSrc: 'img/icons/instagram.svg'}
+        {href: 'https://www.linkedin.com/in/devraffa/', imgSrc: 'img/icons/linkedin.svg', alt: 'Linkedin Icon Link'},
+        {href: 'https://www.tiktok.com/@devraffa', imgSrc: 'img/icons/tiktok.svg', alt: 'TikTok Icon Link'},
+        {href: 'https://twitter.com/DevRaffa', imgSrc: 'img/icons/twitter.svg', alt: 'Twitter Icon Link'},
+        {href: 'https://www.instagram.com/raffabd_/', imgSrc: 'img/icons/instagram.svg', alt: 'Instagram Icon Link'}
     ]
 
     enlaces.forEach((enlace) => {
@@ -43,6 +43,7 @@ const socialNetworks = () => {
         a.target = '_blank';
         const img = document.createElement('img');
         img.setAttribute('src', enlace.imgSrc);
+        img.setAttribute('alt', enlace.alt);
         a.appendChild(img);
         sectionSocialNetworks.appendChild(a);
       });

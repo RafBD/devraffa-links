@@ -98,28 +98,18 @@ footer {
   font-weight: 500;
 }
 
-.burbuja {
-  width: 80px;
-  height: 80px;
+.bubble {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: var(--moradoClaro);
-  opacity: .3;
   position: absolute;
+  z-index: 300;
   bottom: 0;
   left: 5%;
   animation: burbujas 3s linear infinite;
-}
-
-.burbuja2 {
-  left: 25%;
-}
-
-.burbuja3 {
-  left: 70%;
-}
-
-.burbuja4 {
-  left: 90%;
+  animation-play-state: paused;
+  pointer-events: none;
 }
 
 @keyframes burbujas {
